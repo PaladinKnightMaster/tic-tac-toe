@@ -205,3 +205,43 @@ This project demonstrates:
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## 🚀 Deployment to Vercel (CLI)
+
+You can deploy this app to Vercel using the Vercel CLI for instant, production-grade hosting:
+
+### 1. Install Vercel CLI (if not already installed)
+```bash
+npm install -g vercel
+```
+
+### 2. Log in to Vercel
+```bash
+vercel login
+```
+Follow the prompts to authenticate with your Vercel account (GitHub, GitLab, or Bitbucket).
+
+### 3. Deploy Your App
+```bash
+vercel
+```
+- Answer the prompts (project name, directory, etc.).
+- The CLI will build and deploy your app.
+- You'll get a live URL (e.g., `https://your-app-name.vercel.app`).
+
+### 4. (Optional) Deploy to Production
+```bash
+vercel --prod
+```
+This will deploy your app to the production domain.
+
+### 5. Automatic Deploys
+- Every push to your main branch will trigger a new deployment.
+- You can preview deployments for pull requests/branches.
+
+### 6. Custom Domain
+- Add a custom domain in the Vercel dashboard if desired.
+
+---
+
+For more details, see the [Vercel documentation](https://vercel.com/docs).
