@@ -44,9 +44,10 @@ export function Game() {
   }, []);
 
   // Board animation
+  const boardString = gameState.board.toString();
   useEffect(() => {
     setTimeout(() => setBoardAnim("opacity-100 scale-100"), 80);
-  }, [gameState.board.toString()]);
+  }, [boardString]);
 
   // Play sounds and show confetti based on game events
   useEffect(() => {

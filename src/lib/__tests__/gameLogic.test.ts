@@ -103,7 +103,7 @@ describe('Tic-Tac-Toe Game Logic', () => {
   });
 
   it('should update game state and switch players', () => {
-    let state = createInitialGameState();
+    const state = createInitialGameState();
     state = updateGameState(state, 0, 0);
     expect(state.board[0][0]).toBe('X');
     expect(state.currentPlayer).toBe('O');
@@ -159,7 +159,7 @@ describe('Tic-Tac-Toe Game Logic', () => {
   });
 
   it('should not update game state after win or draw', () => {
-    let state = createInitialGameState();
+    const state = createInitialGameState();
     // Fill the board for a draw
     state.board = [
       ['X', 'O', 'X'],
